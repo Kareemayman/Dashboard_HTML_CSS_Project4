@@ -49,6 +49,33 @@ a {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+.main-title h1{
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    width: fit-content;
+}
+
+.main-title h1::before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background-color: white;
+    bottom: 10px;
+    left: 20px;
+}
+
+.main-title h1::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 3px;
+    background-color: black;
+    bottom: 10px;
+    left: 20px;
+}
 /* End Global Rules */
 
 
