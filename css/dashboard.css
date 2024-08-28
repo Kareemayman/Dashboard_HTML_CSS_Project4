@@ -2,6 +2,13 @@
 :root {
     --main-trans: 0.3s;
     --hover-color: #f6f6f6;
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+    --border-color: #ccc;
 }
 /* End Variables */
 
@@ -49,6 +56,7 @@ a {
 /* Local Rules */
 .page {
     display: flex;
+    flex-wrap: wrap;
 }
 
 aside {
@@ -56,6 +64,7 @@ aside {
     width: 220px;
     padding: 20px;
     box-shadow: 0 0 8px 2px rgb(194, 194, 194);
+    position: relative;
 }
 
 aside h3 {
@@ -153,6 +162,95 @@ aside ul li a[href="#files.html"]::before {
 aside ul li a[href="#plans.html"]::before {
     content: "\f09d";
 }
+
+main {
+    /* width: 100%; */
+    flex-grow: 1;
+}
+
+main header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+}
+
+main header .right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+main header .prof-img {
+    width: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+main header .prof-img img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+main header .right i {
+    font-size: 20px;
+    position: relative;
+}
+
+main header .right i::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    top: -5px;
+    right: -8px;
+}
+
+main header .search-box {
+    position: relative;
+    height: fit-content;
+    max-width: 200px;
+}
+
+main header .search-box::before {
+    content: "\f002";
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    left: 10px;
+    font-weight: 900;
+    color: var(--grey-color);
+    bottom: 11px;
+}
+
+main header input {
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    padding: 10px 0;
+    padding-left: 37px;
+    width: 170px;
+    transition: var(--main-trans);
+}
+
+main header input:focus {
+    width: 200px;
+}
+
+main header input:focus::placeholder {
+    color: white;
+}
+
+main header input::placeholder {
+    font-size: 13px;
+}
+
+main .main-page {
+    background-color: #f1f5f9;
+    height: calc(100vh - 70.4px);
+    margin: 0
+}
 /* End Local Rules */
 
 
@@ -196,6 +294,19 @@ aside ul li a[href="#plans.html"]::before {
 
     aside {
         padding: 10px
+    }
+
+    main header input {
+        width: 120px;
+        font-size: 12px;
+    }
+
+    main header input::placeholder {
+        font-size: 12px;
+    }
+
+    main header input:focus {
+        width: 120px;
     }
 }
 /* End Custom */
