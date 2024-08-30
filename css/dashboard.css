@@ -398,11 +398,10 @@ main .main-page .grid .draft {
     padding: 20px;
     display: flex;
     flex-flow: column wrap;
-
 }
 
 main .main-page .grid .draft h4 {
-    margin-top: 7px;
+    margin-top: 10px;
     color: var(--grey-color);
     font-weight: normal;
     font-size: 15px;
@@ -444,6 +443,177 @@ main .main-page .grid .draft input[type='submit'] {
 
 main .main-page .grid .draft input[type='submit']:hover {
     background-color: var(--blue-alt-color);
+}
+
+main .main-page .grid .targets {
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+main .main-page .grid .targets h2 + h4 {
+    margin-bottom: 20px;
+}
+
+main .main-page .grid .targets h4 {
+    margin-top: 10px;
+    color: var(--grey-color);
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+main .main-page .grid .targets .row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+main .main-page .grid .targets .row .icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-page .grid .targets .row .icon i {
+    font-size: 20px;;
+}
+
+main .main-page .grid .targets .row:first-of-type .icon {
+    background-color: rgb(0 117 255 / 20%);
+    color: var(--blue-color);
+}
+
+main .main-page .grid .targets .row:nth-of-type(2) .icon {
+    background-color: rgb(245 158 11 / 20%);
+    color: var(--orange-color);
+}
+
+main .main-page .grid .targets .row:last-of-type .icon {
+    background-color: rgb(34 197 94 / 20%);
+    color: var(--green-color);
+}
+
+main .main-page .grid .targets .row .tar h3 {
+    font-size: 16px;
+}
+
+main .main-page .grid .targets .row .tar {
+    flex-grow: 1;
+}
+
+main .main-page .grid .targets .row .tar .prog-bar {
+    width: 100%;
+    height: 4px;
+    margin-top: 10px;
+}
+
+main .main-page .grid .targets .row .tar .prog-bar .prog {
+    position: relative;
+}
+
+main .main-page .grid .targets .row:first-of-type .prog-bar {
+    background-color: rgb(0 117 255 / 20%);
+}
+
+main .main-page .grid .targets .row:first-of-type .prog-bar .prog::before {
+    content: "80%";
+    color: white;
+    position: absolute;
+    font-size: 14px;
+    text-align: center;
+    right: -17px;
+    top: -40px;
+    padding: 5px;
+    background-color: var(--blue-color);
+    border-radius: 6px;
+}
+
+main .main-page .grid .targets .row:first-of-type .prog-bar .prog::after {
+    content: "";
+    position: absolute;
+    background-color: var(--blue-color);
+    width: 10px;
+    height: 10px;
+    rotate: 45deg;
+    top: -20px;
+    right: -4px;
+}
+
+main .main-page .grid .targets .row:first-of-type .prog-bar .prog {
+    width: 80%;
+    height: 100%;
+    background-color: var(--blue-color);
+}
+
+main .main-page .grid .targets .row:nth-of-type(2) .prog-bar {
+    background-color: rgb(245 158 11 / 20%);
+}
+
+main .main-page .grid .targets .row:nth-of-type(2) .prog-bar .prog {
+    width: 55%;
+    height: 100%;
+    background-color: var(--orange-color);
+}
+
+main .main-page .grid .targets .row:nth-of-type(2) .prog-bar .prog::before {
+    content: "55%";
+    color: white;
+    position: absolute;
+    font-size: 14px;
+    text-align: center;
+    right: -17px;
+    top: -40px;
+    padding: 5px;
+    background-color: var(--orange-color);
+    border-radius: 6px;
+}
+
+main .main-page .grid .targets .row:nth-of-type(2) .prog-bar .prog::after {
+    content: "";
+    position: absolute;
+    background-color: var(--orange-color);
+    width: 10px;
+    height: 10px;
+    rotate: 45deg;
+    top: -20px;
+    right: -4px;
+}
+
+main .main-page .grid .targets .row:last-of-type .prog-bar {
+    background-color: rgb(34 197 94 / 20%);
+}
+
+main .main-page .grid .targets .row:last-of-type .prog-bar .prog {
+    width: 75%;
+    height: 100%;
+    background-color: var(--green-color);
+}
+
+main .main-page .grid .targets .row:nth-of-type(3) .prog-bar .prog::before {
+    content: "75%";
+    color: white;
+    position: absolute;
+    font-size: 14px;
+    text-align: center;
+    right: -17px;
+    top: -40px;
+    padding: 5px;
+    background-color: var(--green-color);
+    border-radius: 6px;
+}
+
+main .main-page .grid .targets .row:nth-of-type(3) .prog-bar .prog::after {
+    content: "";
+    position: absolute;
+    background-color: var(--green-color);
+    width: 10px;
+    height: 10px;
+    rotate: 45deg;
+    top: -20px;
+    right: -4px;
 }
 /* End Local Rules */
 
@@ -527,7 +697,7 @@ main .main-page .grid .draft input[type='submit']:hover {
 
     main .main-page .grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 500px 400px 400px;
+        grid-template-rows: 500px 400px 420px;
     }
 
     main .main-page .grid .welcome .text  {
@@ -537,6 +707,7 @@ main .main-page .grid .draft input[type='submit']:hover {
     main .main-page .grid .welcome .text .col:not(:last-of-type) p {
         margin-bottom: 30px;
     }
+
 }
 /* End Custom */
 
