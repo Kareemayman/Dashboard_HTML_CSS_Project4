@@ -83,11 +83,10 @@ a {
 /* Local Rules */
 .page {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 aside {
-    height: 100vh;
     width: 220px;
     padding: 20px;
     box-shadow: 0 0 8px 2px rgb(194, 194, 194);
@@ -275,7 +274,6 @@ main header input::placeholder {
 
 main .main-page {
     background-color: #f1f5f9;
-    height: calc(100vh - 70.4px);
     margin: 0
 }
 
@@ -293,7 +291,37 @@ main .main-page .grid div {
 
 }
 
+main .main-page .grid .welcome .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #e9e9e9;
+    padding: 20px;
+    height: 35%;
+}
 
+main .main-page .grid .welcome .info h2,
+main .main-page .grid .welcome .info h4 {
+    width: fit-content;
+}
+
+main .main-page .grid .welcome .info h4 {
+    margin-top: 7px;
+    color: var(--grey-color);
+    font-weight: normal;
+    font-size: 15px;
+}
+
+main .main-page .grid .welcome .info .welcome-img {
+    align-self: flex-end;
+    max-width: 200px;
+    translate: 0 -50px;
+    background-color: transparent;
+}
+
+main .main-page .grid .welcome .info .welcome-img img {
+    max-width: 100%;
+}
 /* End Local Rules */
 
 
@@ -340,7 +368,7 @@ main .main-page .grid div {
     }
 
     main header input {
-        width: 120px;
+        width: 150px;
         font-size: 12px;
     }
 
@@ -349,7 +377,15 @@ main .main-page .grid div {
     }
 
     main header input:focus {
-        width: 120px;
+        width: 170px;
+    }
+
+    main .main-page .grid .welcome .info .welcome-img {
+        display: none;
+    }
+
+    main .main-page .grid {
+        grid-template-columns: 1fr;
     }
 }
 /* End Custom */
