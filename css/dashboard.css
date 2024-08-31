@@ -284,7 +284,7 @@ main .main-page .grid {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    grid-template-rows: repeat(3, 430px) 300px;
+    grid-template-rows: repeat(4, 430px) 300px;
     padding: 20px;
 }
 
@@ -615,6 +615,65 @@ main .main-page .grid .targets .row:nth-of-type(3) .prog-bar .prog::after {
     top: -20px;
     right: -4px;
 }
+
+main .main-page .grid .statistics {
+    padding: 20px;
+}
+
+main .main-page .grid .statistics h2 + h4 {
+    margin-bottom: 20px;
+}
+
+main .main-page .grid .statistics h4 {
+    margin-top: 10px;
+    color: var(--grey-color);
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+main .main-page .grid .statistics .inner-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .main-page .grid .statistics .inner-flex .card {
+    border: 1px solid var(--border-color);
+    flex-basis: 48%;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-page .grid .statistics .inner-flex .card i {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+main .main-page .grid .statistics .inner-flex .card h2 + h4 {
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+main .main-page .grid .statistics .inner-flex .card:first-of-type i {
+    color: var(--orange-color)
+}
+
+main .main-page .grid .statistics .inner-flex .card:nth-of-type(2) i {
+    color: var(--blue-alt-color)
+}
+
+main .main-page .grid .statistics .inner-flex .card:nth-of-type(3) i {
+    color: var(--green-color)
+}
+
+main .main-page .grid .statistics .inner-flex .card:last-of-type i {
+    color: var(--red-color)
+}
 /* End Local Rules */
 
 
@@ -706,6 +765,10 @@ main .main-page .grid .targets .row:nth-of-type(3) .prog-bar .prog::after {
 
     main .main-page .grid .welcome .text .col:not(:last-of-type) p {
         margin-bottom: 30px;
+    }
+
+    main .main-page .grid .statistics .inner-flex {
+        flex-direction: column;
     }
 
 }
