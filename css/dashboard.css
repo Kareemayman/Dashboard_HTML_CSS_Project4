@@ -284,7 +284,7 @@ main .main-page .grid {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    grid-template-rows: repeat(4, 430px) 300px;
+    grid-template-rows: repeat(auto-fill, 430px);
     padding: 20px;
 }
 
@@ -674,6 +674,64 @@ main .main-page .grid .statistics .inner-flex .card:nth-of-type(3) i {
 main .main-page .grid .statistics .inner-flex .card:last-of-type i {
     color: var(--red-color)
 }
+
+main .main-page .grid .news {
+    padding: 20px;
+}
+
+main .main-page .grid .news .row {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-light);
+    border-radius: initial;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+main .main-page .grid .news .row .date {
+    background-color: #e9e9e9;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    text-align: center;
+    color: black;
+}
+
+main .main-page .grid .news .row:last-of-type {
+    padding: 0;
+    padding-top: 20px;
+    border-bottom: none;
+}
+
+main .main-page .grid .news .row .news-img {
+    width: 100px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+main .main-page .grid .news .row .news-img img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+main .main-page .grid .news .row h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+main .main-page .grid .news .row p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: var(--grey-color);
+}
+
+main .main-page .grid .news .row div:first-child {
+    display: flex;
+    align-items: center;
+}
 /* End Local Rules */
 
 
@@ -771,6 +829,26 @@ main .main-page .grid .statistics .inner-flex .card:last-of-type i {
         flex-direction: column;
     }
 
+    main .main-page .grid .news .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main .main-page .grid .news .row div:first-child {
+        flex-direction: column;
+    }
+
+    main .main-page .grid .news .row .news-img {
+        margin-bottom: 10px;
+    }
+
+    main .main-page .grid .news .row h4 {
+        margin-bottom: 10px;
+    }
+
+    main .main-page .grid .news .row p {
+        margin-bottom: 10px;
+    }
 }
 /* End Custom */
 
