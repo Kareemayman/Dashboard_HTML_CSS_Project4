@@ -974,6 +974,76 @@ main .main-page .grid .proj-prog .prog-img {
 main .main-page .grid .proj-prog .prog-img img {
     max-width: 100%;
 }
+
+main .main-page .grid .reminders {
+    padding: 20px;
+}
+
+main .main-page .grid .reminders h2 {
+    margin-bottom: 20px;
+}
+
+main .main-page .grid .reminders .row {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+main .main-page .grid .reminders .row div:first-child {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+
+main .main-page .grid .reminders .row:first-of-type div:first-child {
+    background-color: var(--blue-color);
+}
+
+main .main-page .grid .reminders .row:nth-of-type(2) div:first-child {
+    background-color: var(--green-color);
+}
+
+main .main-page .grid .reminders .row:nth-of-type(3) div:first-child {
+    background-color: var(--orange-color);
+}
+
+main .main-page .grid .reminders .row:last-of-type div:first-child {
+    background-color: var(--red-color);
+}
+
+main .main-page .grid .reminders .row .info h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+main .main-page .grid .reminders .row .info p {
+    color: var(--grey-color);
+    font-size: 12px;
+}
+
+main .main-page .grid .reminders .row .info {
+    border-left: 2px solid;
+    border-radius: 0;
+    padding-left: 15px;
+}
+
+main .main-page .grid .reminders .row:first-of-type .info {
+    border-left-color: var(--blue-color);
+}
+
+main .main-page .grid .reminders .row:nth-of-type(2) .info {
+    border-left-color: var(--green-color);
+}
+
+main .main-page .grid .reminders .row:nth-of-type(3) .info {
+    border-left-color: var(--orange-color);
+}
+
+main .main-page .grid .reminders .row:last-of-type .info {
+    border-left-color: var(--red-color);
+}
 /* End Local Rules */
 
 
@@ -1057,7 +1127,7 @@ main .main-page .grid .proj-prog .prog-img img {
 
     main .main-page .grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 500px 400px 420px;
+        grid-template-rows: 500px;
     }
 
     main .main-page .grid .welcome .text  {
