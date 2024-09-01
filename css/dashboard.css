@@ -787,6 +787,31 @@ main .main-page .grid .tasks .row i {
 main .main-page .grid .tasks .row i:hover {
     color: var(--red-color);
 }
+
+main .main-page .grid .search-items {
+    padding: 20px;
+}
+
+main .main-page .grid .search-items h4 {
+    margin-top: 20px;
+    color: var(--grey-color);
+    font-weight: normal;
+}
+
+main .main-page .grid .search-items .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+main .main-page .grid .search-items .row div {
+    background-color: #e9e9e9;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 6px;
+}
 /* End Local Rules */
 
 
