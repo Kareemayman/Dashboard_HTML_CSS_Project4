@@ -1098,6 +1098,124 @@ main .main-page .grid .latest-post .row {
     color: var(--grey-color);
     margin-top: 15px;
 }
+
+main .main-page .grid .social {
+    padding: 20px;
+}
+
+main .main-page .grid .social h2 {
+    margin-bottom: 30px;
+}
+
+main .main-page .grid .social .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 0;
+    padding-right: 20px;
+}
+
+main .main-page .grid .social .row .social-icon {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+}
+
+main .main-page .grid .social .row .social-icon i {
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    transition: var(--main-trans);
+    padding: 12px 10px;
+    min-width: 54px;
+}
+
+main .main-page .grid .social .row .social-icon i:hover {
+    rotate: 5deg;
+}
+
+main .main-page .grid .social .row .social-icon p {
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+main .main-page .grid .social .row a {
+    display: block;
+    padding: 5px 10px;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 6px;
+    min-width: 80px;
+}
+
+main .main-page .grid .social .row:first-of-type {
+    background-color: rgb(29 161 242 / 20%);
+}
+
+main .main-page .grid .social .row:nth-of-type(2) {
+    background-color: rgb(24 119 242 / 20%);
+}
+
+main .main-page .grid .social .row:nth-of-type(3) {
+    background-color: rgb(255 0 0 / 20%);
+}
+
+main .main-page .grid .social .row:last-of-type {
+    background-color: rgb(0 119 181 / 20%);
+}
+
+main .main-page .grid .social .row:first-of-type i {
+    background-color: #1da1f2;
+}
+
+main .main-page .grid .social .row:first-of-type p {
+    color: #1da1f2;
+}
+
+main .main-page .grid .social .row:first-of-type a {
+    background-color: #1da1f2;
+}
+
+main .main-page .grid .social .row:nth-of-type(2) i {
+    background-color: #1877f2;
+}
+
+main .main-page .grid .social .row:nth-of-type(2) p {
+    color: #1877f2;
+}
+
+main .main-page .grid .social .row:nth-of-type(2) a {
+    background-color: #1877f2;
+}
+
+main .main-page .grid .social .row:nth-of-type(3) i {
+    background-color: #ff0000;
+}
+
+main .main-page .grid .social .row:nth-of-type(3) p {
+    color: #ff0000;
+}
+
+main .main-page .grid .social .row:nth-of-type(3) a {
+    background-color: #ff0000;
+}
+
+main .main-page .grid .social .row:last-of-type i {
+    background-color: #0077b5;
+}
+
+main .main-page .grid .social .row:last-of-type p {
+    color: #0077b5;
+}
+
+main .main-page .grid .social .row:last-of-type a {
+    background-color: #0077b5;
+}
 /* End Local Rules */
 
 
@@ -1227,6 +1345,26 @@ main .main-page .grid .latest-post .row {
 
     main .main-page .grid .latest-post .author + p {
         text-align: center;
+    }
+
+    main .main-page .grid .social .row {
+        padding-right: 10px;
+    }
+
+    main .main-page .grid .social .row a {
+        min-width: fit-content;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    main .main-page .grid .social .row .social-icon i {
+        font-size: 15px;
+        padding: 10px;
+        min-width: 37px;
+    }
+
+    main .main-page .grid .social .row .social-icon p {
+        font-size: 13px;
     }
 }
 /* End Custom */
