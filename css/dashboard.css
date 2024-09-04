@@ -176,35 +176,35 @@ aside ul li:first-of-type a::before {
     content: "\f201";
 }
 
-aside ul li a[href="#settings.html"]::before {
+aside ul li a[href="settings.html"]::before {
     content: "\f013";
     margin-left: -1px;
 }
 
-aside ul li a[href="#profile.html"]::before {
+aside ul li a[href="profile.html"]::before {
     content: "\f007";
 }
 
-aside ul li a[href="#projects.html"]::before {
+aside ul li a[href="projects.html"]::before {
     content: "\e13b";
 }
 
-aside ul li a[href="#courses.html"]::before {
+aside ul li a[href="courses.html"]::before {
     content: "\f19d";
     margin-left: -1px;
 }
 
-aside ul li a[href="#friends.html"]::before {
+aside ul li a[href="friends.html"]::before {
     content: "\f500";
     margin-left: -1px;
 }
 
-aside ul li a[href="#files.html"]::before {
+aside ul li a[href="files.html"]::before {
     content: "\f15b";
     margin-left: 2px;
 }
 
-aside ul li a[href="#plans.html"]::before {
+aside ul li a[href="plans.html"]::before {
     content: "\f09d";
 }
 

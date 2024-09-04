@@ -27,8 +27,8 @@
         <aside>
             <h3>Kareem</h3>
             <ul>
-                <li><a href="index.html" class="active"><span>Dashboard</span></a></li>
-                <li><a href="settings.html"><span>Settings</span></a></li>
+                <li><a href="index.html"><span>Dashboard</span></a></li>
+                <li><a href="settings.html" class="active"><span>Settings</span></a></li>
                 <li><a href="profile.html"><span>Profile</span></a></li>
                 <li><a href="projects.html"><span>Projects</span></a></li>
                 <li><a href="courses.html"><span>Courses</span></a></li>
@@ -38,7 +38,47 @@
             </ul>
         </aside>
 
-        
+        <main>
+            <header>
+                <div class="search-box">
+                    <input type="search" name="search" id="search" placeholder="Type a Keyword">
+                </div>
+
+                <div class="right">
+                    <i class="fa-regular fa-bell"></i>
+                    
+                    <div class="prof-img">
+                        <img src="images/profile.jpg" alt="prof-img">
+                    </div>
+                </div>
+            </header>
+
+            <div class="main-page">
+                <div class="main-title">
+                    <h1>Settings</h1>
+                </div>
+
+                <div class="grid">
+                    <div class="site-control">
+                        <h2>Site Control</h2>
+                        <p>Control The Website If There Is Maintenance</p>
+
+                        <div class="row">
+                            <div class="info">
+                                <h5>Website Control</h5>
+                                <p>Open/Close Website And Type The Reason</p>
+                            </div>
+                            <label class="special-check">
+                                <input type="checkbox" class="special-check" checked>
+                                <div class="toggle"></div>
+                            </label>
+                        </div>
+
+                        <textarea placeholder="Close Message Content"></textarea>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 </body>
 </html>
