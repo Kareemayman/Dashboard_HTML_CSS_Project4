@@ -1,3 +1,7 @@
+.main-page {
+    padding-bottom: 25px !important;
+}
+
 .grid {
     grid-template-rows: initial !important;
 }
@@ -238,6 +242,84 @@
     color: black;
 }
 
+.grid .widgets-control h2 {
+    margin-bottom: 10px;
+}
+
+.grid .widgets-control h2 + p {
+    color: var(--grey-color);
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.grid .widgets-control label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.grid .widgets-control label:hover {
+    color: var(--blue-alt-color);
+}
+
+.grid .widgets-control input {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.grid .widgets-control label > div {
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    position: relative;
+}
+
+.grid .widgets-control label > div .icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    border: 2px solid var(--blue-color);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.grid .widgets-control label input:not(:checked) + .icon{
+    border-color: #777;
+}
+
+.grid .widgets-control label > div .icon:hover {
+    border-color: var(--blue-color);
+}
+
+.grid .widgets-control label:hover > div .icon {
+    border-color: var(--blue-color);
+}
+
+.grid .widgets-control label > div .icon i {
+    color: var(--blue-color);
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.grid .widgets-control label input:not(:checked) + .icon i {
+    rotate: -360deg;
+    scale: 0.1;
+    opacity: 0;
+}
 
 
 
