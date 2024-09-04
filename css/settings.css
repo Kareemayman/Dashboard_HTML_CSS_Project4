@@ -217,6 +217,7 @@
     background-color: #f1f1f1;
     border-radius: 6px;
     border: 1px solid var(--border-color);
+    overflow: hidden;
 }
 
 .grid .social-info .row input {
@@ -225,7 +226,8 @@
     background-color: #f1f1f1;
     font-size: 13px;
     border-left: 1px solid var(--border-color);
-    padding: 10px
+    padding: 10px;
+    flex-grow: 1;
 }
 
 .grid .social-info .row i {
