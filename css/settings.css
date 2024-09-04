@@ -82,3 +82,58 @@
     outline: none;
     margin-bottom: 20px;
 }
+
+.grid .general-info h2{
+    margin-bottom: 10px;
+}
+
+.grid .general-info h2 + p {
+    color: var(--grey-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.grid .general-info label {
+    margin-top: 20px;
+    display: block;
+    color: var(--grey-color);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.grid .general-info input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    border: 1px solid;
+    border-color: var(--border-color);
+    outline: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.grid .general-info .row {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.grid .general-info input[type=email] {
+    background-color: rgb(242, 242, 247);
+    flex-grow: 1;
+}
+
+.grid .general-info a {
+    color: var(--blue-color);
+    font-weight: 500;
+}
+
+
+
+
+
+/* Start Media Queries  */
+@media (width <= 769px) {
+    
+}
