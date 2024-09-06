@@ -363,12 +363,10 @@
 }
 
 .grid .backup-manager .mini-grid div {
-    border-radius: 10px;
-    border: 2px solid var(--border-light);
     cursor: pointer;
 }
 
-.grid .backup-manager .mini-grid div a {
+.grid .backup-manager .mini-grid div label {
     display: block;
     width: 100%;
     height: 100%;
@@ -376,18 +374,48 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--blue-color);
+    color: black;
     padding: 15px;
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+.grid .backup-manager .mini-grid div label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.grid .backup-manager .mini-grid div label input:checked + i{
+    color: var(--blue-color);
+}
+
+.grid .backup-manager .mini-grid div label input:checked + i + p {
+    color: var(--blue-color);
+}
+
+.grid .backup-manager .mini-grid div label .border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    box-shadow: none;
+    border-radius: 10px;
+    border: 2px solid var(--border-light);
+}
+
+.grid .backup-manager .mini-grid div label input:checked + i + p + .border {
+    border-color: var(--blue-color);
 }
 
 .grid .backup-manager .mini-grid div p {
     margin-top: 10px;
 }
-
-.grid .backup-manager .mini-grid div.active-package {
-    border-color: var(--blue-color);
-}
-
 
 
 /* Start Media Queries  */
