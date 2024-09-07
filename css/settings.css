@@ -126,6 +126,7 @@
 .grid .general-info input[type=email] {
     background-color: rgb(242, 242, 247);
     flex-grow: 1;
+    cursor: not-allowed;
 }
 
 .grid .general-info a {
