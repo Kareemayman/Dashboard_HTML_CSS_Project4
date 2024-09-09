@@ -172,6 +172,65 @@
     font-weight: 500;
 }
 
+.main-page.profile .latest-activities {
+    grid-column: 2 / 3;
+}
+
+.main-page.profile .latest-activities h2 {
+    margin-bottom: 10px;
+}
+
+.main-page.profile .latest-activities h2 + p {
+    color: var(--grey-color);
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.main-page.profile .latest-activities .row {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-page.profile .latest-activities .row:not(:last-of-type) {
+    border-bottom: 1px solid var(--border-light);
+}
+
+.main-page.profile .latest-activities .row .act-img {
+    width: 70px;
+    min-width: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.main-page.profile .latest-activities .row .act-img img {
+    max-width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.main-page.profile .latest-activities .row .act-info {
+    display: block;    
+    flex-grow: 1;
+}
+
+.main-page.profile .latest-activities .row h4 {
+    font-weight: 500;
+}
+
+.main-page.profile .latest-activities .row h4:last-of-type {
+    color: var(--grey-color);
+}
+
+.main-page.profile .latest-activities .row h4:first-of-type {
+    padding-bottom: 10px;
+}
+
+.main-page.profile .latest-activities .row .time h4:first-of-type {
+    text-align: right;
+}
 
 
 
@@ -197,5 +256,22 @@
 
     .main-page.profile .my-skills {
         grid-column: 1 / 3;
+    }
+
+    .main-page.profile .my-skills .row {
+        justify-content: center;
+    }
+
+    .main-page.profile .latest-activities {
+        grid-column: 1 / 3;
+    }
+
+    .main-page.profile .latest-activities .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-page.profile .latest-activities .row .time h4:first-of-type {
+        text-align: center;
     }
 }
