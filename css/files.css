@@ -1,6 +1,5 @@
 main .main-page.files .flex {
     display: flex;
-    gap: 20px;
 }
 
 main .main-page.files .flex .grid {
@@ -14,6 +13,8 @@ main .main-page.files .flex .files-statistics {
     padding: 20px;
     border-radius: 10px;
     margin-right: 20px;
+    margin-top: 20px;
+    height: fit-content;
 }
 
 main .main-page.files .flex .files-statistics .row {
@@ -113,5 +114,77 @@ main .main-page.files .flex .files-statistics a:hover i {
 
     50% {
         translate: 0 -5px;
+    }
+}
+
+main .main-page.files .flex .grid .file {
+    position: relative;
+    padding: 10px;
+}
+
+main .main-page.files .flex .grid .file::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--grey-color);
+    left: 10px;
+    top: 10px;
+    position: absolute;
+}
+
+main .main-page.files .flex .grid .file img {
+    width: 65px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: var(--main-trans);
+}
+
+main .main-page.files .flex .grid .file:hover img {
+    rotate: 6deg;
+}
+
+main .main-page.files .flex .grid .file img + p {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+}
+
+main .main-page.files .flex .grid .file img + p + p {
+    color: var(--grey-color);
+    font-size: 13px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+main .main-page.files .flex .grid .file .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-light);
+    border-radius: 0;
+}
+
+main .main-page.files .flex .grid .file .details p {
+    color: var(--grey-color);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 0 0;
+}
+
+@media (width < 769px) {
+    main .main-page.files .flex .files-statistics {
+        width: 95%;    
+        order: -1;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+
+    main .main-page.files .flex {
+        flex-direction: column;
+        /* align-items: center; */
     }
 }
