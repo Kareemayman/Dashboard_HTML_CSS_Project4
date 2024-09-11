@@ -1,0 +1,117 @@
+main .main-page.files .flex {
+    display: flex;
+    gap: 20px;
+}
+
+main .main-page.files .flex .grid {
+    flex-grow: 1;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+main .main-page.files .flex .files-statistics {
+    width: 260px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+main .main-page.files .flex .files-statistics .row {
+    display: flex;
+    /* align-items: center; */
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    padding: 10px;
+    margin: 15px 0;
+    gap: 10px;
+}
+
+main .main-page.files .flex .files-statistics .row i {
+    display: block;
+    padding: 12px;
+    text-align: center;
+    border-radius: 0;
+    min-width: 42px;
+}
+
+main .main-page.files .flex .files-statistics .row .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .main-page.files .flex .files-statistics .row:first-of-type i {
+    color: var(--blue-color);
+    background-color: #0077ff44;
+}
+
+main .main-page.files .flex .files-statistics .row:nth-of-type(2) i {
+    color: var(--green-color);
+    background-color: #22c55e34;
+}
+
+main .main-page.files .flex .files-statistics .row:nth-of-type(3) i {
+    color: var(--red-color);
+    background-color: #f443362a;
+}
+
+main .main-page.files .flex .files-statistics .row:last-of-type i {
+    color: var(--orange-color);
+    background-color: #f59f0b38;
+}
+
+main .main-page.files .flex .files-statistics .row .info p:first-of-type {
+    font-size: 13px;
+    color: black;
+    font-weight: 500;
+}
+
+main .main-page.files .flex .files-statistics .row .info p:last-of-type {
+    color: var(--grey-color);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+main .main-page.files .flex .files-statistics .row > p {
+    align-self: center;
+    margin-left: auto;
+    color: var(--grey-color);
+    font-size: 13px;
+}
+
+main .main-page.files .flex .files-statistics a {
+    display: block;
+    padding: 12px 15px;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    background-color: var(--blue-color);
+    transition: var(--main-trans);
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    border-radius: 6px;
+}
+
+main .main-page.files .flex .files-statistics a:hover {
+    background-color: var(--blue-alt-color);
+}
+
+main .main-page.files .flex .files-statistics a i {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+main .main-page.files .flex .files-statistics a:hover i {
+    animation: arrow 0.8s ease-in-out infinite;
+}
+
+@keyframes arrow {
+    0%, 100% {
+        translate: 0 0;
+    }
+
+    50% {
+        translate: 0 -5px;
+    }
+}
