@@ -1,0 +1,150 @@
+main .main-page.friends {
+    padding-bottom: 5px !important;
+}
+
+main .main-page.friends .grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+main .main-page.friends .grid .friend {
+    position: relative;
+}
+
+main .main-page.friends .grid .friend .phone,
+main .main-page.friends .grid .friend .message {
+    position: absolute;
+    background-color: var(--border-light);
+    color: #777;
+    transition: var(--main-trans);
+    text-align: center;
+    padding: 10px;
+    font-weight: 900;
+    top: 10px;
+    border-radius: 50%;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+main .main-page.friends .grid .friend .phone:hover,
+main .main-page.friends .grid .friend .message:hover {
+    background-color: var(--blue-color);
+    color: white;
+}
+
+main .main-page.friends .grid .friend .phone {
+    left: 10px;
+}
+
+main .main-page.friends .grid .friend .message {
+    left: 50px;
+}
+
+main .main-page.friends .grid .friend img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+main .main-page.friends .grid .friend img + h4 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+main .main-page.friends .grid .friend img + h4 + p {
+    color: var(--grey-color);
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+main .main-page.friends .grid .friend .info {
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+    border-radius: 0;
+    padding: 10px 0;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+main .main-page.friends .grid .friend .info .details i {
+    display: inline-block;
+    width: 20px;
+}
+
+main .main-page.friends .grid .friend .info .details {
+    font-size: 14px;
+}
+
+main .main-page.friends .grid .friend .info .vip {
+    color: var(--orange-color);
+    font-size: 40px;
+    font-weight: 900;
+    opacity: 0.3;
+}
+
+main .main-page.friends .grid .friend .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .main-page.friends .grid .friend .options .join-date {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--grey-color);
+}
+
+main .main-page.friends .grid .friend .options .buttons a {
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: var(--main-trans);
+}
+
+main .main-page.friends .grid .friend .options .buttons a:first-of-type {
+    background-color: var(--blue-color);
+    margin-right: 2px;
+}
+
+main .main-page.friends .grid .friend .options .buttons a:first-of-type:hover {
+    background-color: var(--blue-alt-color);
+}
+
+main .main-page.friends .grid .friend .options .buttons a:last-of-type:hover {
+    background-color: #bb3128;
+}
+
+main .main-page.friends .grid .friend .options .buttons a:last-of-type {
+    background-color: var(--red-color);
+}
+
+@media (width <= 769px) {
+    main .main-page.friends .grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    main .main-page.friends .grid .friend .info {
+        flex-direction: column;
+    }
+
+    main .main-page.friends .grid .friend .options {
+        flex-direction: column;
+    }
+
+    main .main-page.friends .grid .friend .options .join-date {
+        margin-bottom: 10px;
+    }
+}
