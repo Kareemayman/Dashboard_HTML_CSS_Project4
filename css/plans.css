@@ -1,0 +1,133 @@
+.main-page.plans {
+    min-height: calc( 100dvh - 70.39px );
+}
+
+.main-page.plans .grid .plan {
+    border-radius: 0;
+}
+
+.main-page.plans .grid .plan .price {
+    text-align: center;
+    color: white;
+    border-radius: 0;
+    padding: 30px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.main-page.plans .grid .plan .price::after {
+    content: "";
+    position: absolute;
+    width: 97.7%;
+    height: 92%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border: 3px solid white;
+}
+
+.main-page.plans .grid .plan .price h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 5px;
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-page.plans .grid .plan .price h1::before {
+    content: "$";
+    position: absolute;
+    left: -20px;
+    top: -5px;
+    font-size: 30px;
+}
+
+.main-page.plans .grid .plan .price h2 {
+    margin: 0;
+}
+
+.main-page.plans .grid .plan:first-of-type .price {
+    background-color: var(--green-color);
+}
+
+.main-page.plans .grid .plan:nth-of-type(2) .price {
+    background-color: var(--blue-color);
+}
+
+.main-page.plans .grid .plan:last-of-type .price {
+    background-color: var(--orange-color);
+}
+
+.main-page.plans .grid .plan .feature {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-radius: 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.main-page.plans .grid .plan .feature i {
+    width: 35px;
+    text-align: center;
+    padding: 0 10px;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.main-page.plans .grid .plan .feature i.fa-solid.fa-check {
+    color: var(--green-color);
+}
+
+.main-page.plans .grid .plan .feature i.fa-solid.fa-xmark {
+    color: var(--red-color);
+}
+
+.main-page.plans .grid .plan .feature i + p {
+    font-weight: 500;
+    font-size: 15px;
+    flex-grow: 1;
+}
+
+.main-page.plans .grid .plan .feature i + p + i {
+    color: var(--grey-color);
+}
+
+.main-page.plans .grid .plan a {
+    display: block;
+    margin-top: 15px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+.main-page.plans .grid .plan:first-of-type a {
+    background-color: var(--green-color);
+}
+
+.main-page.plans .grid .plan:nth-of-type(2) a {
+    background-color: var(--blue-color);
+}
+
+.main-page.plans .grid .plan p:last-child {
+    text-align: center;
+    color: var(--grey-color);
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+@media (width <= 769px) {
+    .main-page.plans .grid .plan .price::after {
+        width: 95%;
+    }
+
+    .main-page.plans .grid .plan a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
